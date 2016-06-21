@@ -1,3 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var data = null;
 var searchValue = document.getElementById('searchbox').value;
 var newP = document.createElement('p');
@@ -13,7 +32,8 @@ xhr.addEventListener("readystatechange", function () {
     // console.log(this.responseText);
     var places = JSON.parse(xhr.responseText);
     console.table(places);
-    for(var i=0; i< places.length; i++){
+    for(var i=0; i< places.value.length; i++){
+      var hey = "";
       if(searchValue === places.restaurants[0].restaurant.location.city){
         newP.innerHTML = "hello";
         one.appendChild(newP);

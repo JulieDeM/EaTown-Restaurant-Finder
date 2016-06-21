@@ -27,7 +27,6 @@ header{
   padding: 0;
   display: inline-flex;
   flex-direction: row;
-  /*border: 2px solid grey;*/
   box-shadow: 5px 5px 0px #999;
   border-radius: 10% 10% 10% 10%;
   height: 50vh;
@@ -46,7 +45,7 @@ footer{
   display: inline-flex;
   flex-direction: row;
   height: 200px;
-  width: 200px;
+  width: 100%;
   border: 3px red solid;
   justify-content: center;
 }
@@ -63,4 +62,15 @@ footer{
 #imgOne{
   background-image: url(food-pic1.jpg);
   height: 10%;
+}
+#searchbox{
+  background-color: #99ffeb;
+  height:60px;
+  width: 350px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+}
+newP{
+  color: #E719FF;
 }
