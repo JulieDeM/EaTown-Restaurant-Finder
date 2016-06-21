@@ -1,0 +1,89 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+#backgroundimg{
+  background-image: url(italian-food.jpg);
+  width:100%;
+  height: 35em;
+  background-size: cover;
+}
+header{
+  background-color: #0DFFCF;
+  width: 100%;
+  height: 100px;
+  opacity: .6;
+}
+#one{
+  border: 5px #E719FF solid;
+  width:200px;
+height:200px;
+border-radius:50%;
+font-size:50px;
+/*color:#fff;*/
+color: #0DFFCF;
+line-height:610px;
+text-align:center;
+}
+#two{
+  border: 5px #E719FF solid;
+  width:200px;
+height:200px;
+border-radius:50%;
+font-size:50px;
+color: #0DFFCF;
+line-height:500px;
+text-align:center;
+}
+#three{
+  border: 5px #E719FF solid;
+  width:200px;
+height:200px;
+border-radius:50%;
+font-size:50px;
+color: #0DFFCF;
+line-height:500px;
+text-align:center;
+}
+.circle{
+  columns: 3;
+  height: auto;
+  text-align: center;
+  font-size: 35px;
+  display: inline-flex;
+  flex-direction: row;
+}
+footer{
+  background-color: #C4C1E8;
+  height: 10vh;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+foot{
+  margin: 50%;
+  padding-top: 40px;
+}
+#searchbox{
+  background-image: url();
+  background-color: #99ffeb;
+  height:60px;
+  width: 350px;
+  font-size: 25px;
+}
+.button{
+  background-color: #E719FF;
+  color: #ffffff;
+  padding: 15px 20px 15px 20px;
+  font-size: 20px;
+  margin: 100px 10px 10px 10px;
+  border-radius: 5%;
+  align-items: center;
+}
+/*#icons{
+  display: inline-flex;
+  flex-direction: row;
+  border: 3px red solid;
+  height: 30px;
+  width: 30px;
+}*/
