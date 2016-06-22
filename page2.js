@@ -1,31 +1,3 @@
-// var info = null;
-
-// var location = new XMLHttpRequest();
-// location.withCredentials = true;
-// var searchValue2 = document.getElementById('searchbox').value;
-//
-// location.addEventListener("readystatechange", function () {
-//   if (this.readyState === 4 && xhr.status < 400) {
-//     console.log(this.responseText);
-//     var entI = JSON.parse(location.responseText);
-//     console.log(entI);
-//     // if(searchValue === null){
-//     //   return "Sorry, there are no restaurants for this search!"
-//     // }
-//   }
-// });
-//
-// location.open("GET", "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/locations?query="+ searchValue2);
-// location.setRequestHeader("user-key", "57a59ee455f594054dfce92d93f946a9");
-// location.setRequestHeader("x-requested-with", "text/html");
-// location.setRequestHeader("cache-control", "no-cache");
-// location.setRequestHeader("postman-token", "2055bc9a-9b64-f0ce-ab94-fb5ada20587e");
-//
-// location.send(info);
-
-
-
-
 //****second api**************
 
 var data = null;
@@ -38,6 +10,9 @@ var button = document.getElementById('button');
 var newP = document.createElement('p');
 var newJ = document.createElement('p');
 var newK = document.createElement('p');
+var rest1 = Math.floor(Math.random(emptyArray)*4);
+var rest2 = Math.floor(Math.random(emptyArray)*4);
+var rest33 = Math.floor(Math.random(emptyArray)*4);
 var emptyArray = [];
 
 // xhr.withCredentials = true;
@@ -60,7 +35,7 @@ xhr.addEventListener("readystatechange", function () {
       newJ.innerHTML = "";
       newK.innerHTML = "";
         // if(searchValue === places.restaurants[pic1].restaurant.location.city){
-            newP.innerHTML = places.restaurants[places.restaurants.length * Math.floor(Math.random())].restaurant.name;
+            newP.innerHTML = places.restaurants[places.length * pic1].restaurant.name;
             console.log(newP.innerHTML);
             newJ.innerHTML = places.restaurants[places.restaurants.length * Math.floor(Math.random())].restaurant.name;
             newK.innerHTML = places.restaurants[places.restaurants.length * Math.floor(Math.random())].restaurant.name;
@@ -80,3 +55,21 @@ xhr.setRequestHeader("cache-control", "no-cache");
 xhr.setRequestHeader("postman-token", "a974c264-4d82-dad3-c68c-7755f8c5ab87");
 
 xhr.send(data);
+
+//had to use jquery for first one or wouldn't work
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id="+ searchValue + "&entity_type=city",
+  "method": "GET",
+  "headers": {
+    "user-key": "57a59ee455f594054dfce92d93f946a9",
+    "x-requested-with": "text/html",
+    "cache-control": "no-cache",
+    "postman-token": "723ae512-1724-72a5-fa86-c0f546a67474"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
