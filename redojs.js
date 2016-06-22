@@ -1,22 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var data = null;
 var searchValue = document.getElementById('searchbox').value;
 var newP = document.createElement('p');
@@ -25,7 +7,6 @@ var two = document.getElementById('two');
 var three = document.getElementById('three');
 
 var xhr = new XMLHttpRequest();
-// xhr.withCredentials = true;
 
 xhr.addEventListener("readystatechange", function () {
   if (this.readyState === 4 && xhr.status < 400) {

@@ -1,8 +1,8 @@
 // var info = null;
-//
+
 // var location = new XMLHttpRequest();
-// // location.withCredentials = true;
-var searchValue2 = document.getElementById('searchbox').value;
+// location.withCredentials = true;
+// var searchValue2 = document.getElementById('searchbox').value;
 //
 // location.addEventListener("readystatechange", function () {
 //   if (this.readyState === 4 && xhr.status < 400) {
@@ -61,6 +61,7 @@ xhr.addEventListener("readystatechange", function () {
       newK.innerHTML = "";
         // if(searchValue === places.restaurants[pic1].restaurant.location.city){
             newP.innerHTML = places.restaurants[places.restaurants.length * Math.floor(Math.random())].restaurant.name;
+            console.log(newP.innerHTML);
             newJ.innerHTML = places.restaurants[places.restaurants.length * Math.floor(Math.random())].restaurant.name;
             newK.innerHTML = places.restaurants[places.restaurants.length * Math.floor(Math.random())].restaurant.name;
             one.appendChild(newP);
@@ -71,7 +72,7 @@ xhr.addEventListener("readystatechange", function () {
   }
 });
 
-xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search&count=60");
+xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search");
 xhr.setRequestHeader("user-key", "57a59ee455f594054dfce92d93f946a9");
 xhr.setRequestHeader("authorization", "Basic amRlbWFzdGVyc0Bob3RtYWlsLmNvbTpwYXBlcmJhZw==");
 xhr.setRequestHeader("x-requested-with", "text/html");

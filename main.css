@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
+  cursor:e-resize;;
 }
 #backgroundimg{
   background-image: url(italian-food.jpg);
@@ -17,33 +18,32 @@ header{
 #one{
   border: 5px #E719FF solid;
   width:200px;
-height:200px;
-border-radius:50%;
-font-size:50px;
-/*color:#fff;*/
-color: #0DFFCF;
-line-height:610px;
-text-align:center;
+  height:200px;
+  border-radius:50%;
+  font-size:50px;
+  color: #0DFFCF;
+  line-height:610px;
+  text-align:center;
 }
 #two{
   border: 5px #E719FF solid;
   width:200px;
-height:200px;
-border-radius:50%;
-font-size:50px;
-color: #0DFFCF;
-line-height:500px;
-text-align:center;
+  height:200px;
+  border-radius:50%;
+  font-size:50px;
+  color: #0DFFCF;
+  line-height:500px;
+  text-align:center;
 }
 #three{
   border: 5px #E719FF solid;
   width:200px;
-height:200px;
-border-radius:50%;
-font-size:50px;
-color: #0DFFCF;
-line-height:500px;
-text-align:center;
+  height:200px;
+  border-radius:50%;
+  font-size:50px;
+  color: #0DFFCF;
+  line-height:500px;
+  text-align:center;
 }
 .circle{
   columns: 3;
@@ -70,6 +70,10 @@ foot{
   height:60px;
   width: 350px;
   font-size: 25px;
+  margin-top: 30vh;
+  margin-left: 45vh;
+  opacity: .8;
+  box-shadow: 2px 2px 0px #0DFFCF;
 }
 .button{
   background-color: #E719FF;
@@ -77,6 +81,11 @@ foot{
   padding: 15px 20px 15px 20px;
   font-size: 20px;
   margin: 100px 10px 10px 10px;
-  border-radius: 5%;
+  border-radius: 10% 10% 10% 10%;
   align-items: center;
+}
+.icons{
+  display: inline-flex;
+  border: 3px solid red;
+  flex-direction: column;
 }

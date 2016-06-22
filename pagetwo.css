@@ -48,6 +48,7 @@ footer{
   width: 100%;
   border: 3px red solid;
   justify-content: center;
+  position: absolute;
 }
 .button{
   background-color: #E719FF;
@@ -73,4 +74,10 @@ footer{
 }
 newP{
   color: #E719FF;
+}
+.rest1{
+  display: inline-flex;
+  weight: 10px;
+  height: 5px;
+  border: 3px red solid;
 }
