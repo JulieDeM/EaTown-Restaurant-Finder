@@ -1,28 +1,8 @@
-//had to use jquery for this one or wouldn't work
-var searchValue = document.getElementById('searchbox');
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id="+ searchValue + "&entity_type=city",
-  "method": "GET",
-  "headers": {
-    "user-key": "57a59ee455f594054dfce92d93f946a9",
-    "x-requested-with": "text/html",
-    "cache-control": "no-cache",
-    "postman-token": "723ae512-1724-72a5-fa86-c0f546a67474"
-  }
-}
-
-$.ajax(settings).done(function(response) {
-console.log(response);
-
-
-
-
 //****second api**************
 
 var data = null;
 var xhr = new XMLHttpRequest();
+var searchValue = document.getElementById('searchbox').value;
 var one = document.getElementById('one');
 var two = document.getElementById('two');
 var three = document.getElementById('three');
@@ -60,7 +40,7 @@ xhr.addEventListener("readystatechange", function () {
       newJ.innerHTML = "";
       newK.innerHTML = "";
       console.log(places.length * Math.floor(Math.random()));
-        if(searchValue.value === places.restaurants[emptyArray].restaurant.location.city){
+        if(searchValue === places.restaurants[emptyArray].restaurant.location.city){
           //restaurant randomizer
             newP.innerHTML = places.restaurants[rest1].restaurant.name;
             console.log(newP.innerHTML);
@@ -80,7 +60,6 @@ xhr.addEventListener("readystatechange", function () {
 
   }
 });
-});
 
 xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search");
 xhr.setRequestHeader("user-key", "57a59ee455f594054dfce92d93f946a9");
@@ -91,32 +70,32 @@ xhr.setRequestHeader("postman-token", "a974c264-4d82-dad3-c68c-7755f8c5ab87");
 
 xhr.send(data);
 
-// //had to use jquery for this one or wouldn't work
-// var settings = {
-//   "async": true,
-//   "crossDomain": true,
-//   "url": "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id="+ searchValue + "&entity_type=city",
-//   "method": "GET",
-//   "headers": {
-//     "user-key": "57a59ee455f594054dfce92d93f946a9",
-//     "x-requested-with": "text/html",
-//     "cache-control": "no-cache",
-//     "postman-token": "723ae512-1724-72a5-fa86-c0f546a67474"
-//   }
-// }
-//
-// $.ajax(settings).done(function (response) {
-// console.log(respone);
-//
-//
-//
-// });
+//had to use jquery for this one or wouldn't work
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id="+ searchValue + "&entity_type=city",
+  "method": "GET",
+  "headers": {
+    "user-key": "57a59ee455f594054dfce92d93f946a9",
+    "x-requested-with": "text/html",
+    "cache-control": "no-cache",
+    "postman-token": "723ae512-1724-72a5-fa86-c0f546a67474"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+console.log(respone);
 
 
 
-// $.ajax(setting).done(function(data){
-//   var id = jasonparse;
-//   $.ajax(setting).done(function(data2){
-//     big funcitons here
-//   })
-// })
+});
+
+
+
+$.ajax(setting).done(function(data){
+  id = jasonparse.;
+  $.ajax(setting).done(function(data2){
+    big funcitons here
+  })
+})

@@ -1,10 +1,11 @@
 
 var data = null;
-var searchValue = document.getElementById('searchbox').value;
+var searchValue = document.getElementById('searchbox');
 var newP = document.createElement('p');
 var one = document.getElementById('one');
 var two = document.getElementById('two');
 var three = document.getElementById('three');
+var generate3 = document.getElementById('generate3');
 
 var xhr = new XMLHttpRequest();
 
@@ -38,13 +39,53 @@ var show3 = document.getElementById('generate3');//generates 3 by clicking butto
 var allR = document.getElementById('showall'); //generates all restaurants by button
 var newR = document.createElement('p'); //creates a new p for 3 random restaurants
 
+//images of cities
+var denver = document.getElementById('one');
+var chicago = document.getElementById('two');
+var newyork = document.getElementById('three');
+var austin = document.getElementById('four');
+var losangeles = document.getElementById('five');
 
-
-show3.addEventListener("click", function(){
-  alert("hello")
+show3.addEventListener("click",function(event){
+  event.preventDefault();
+  window.location="indexpage2.html?city=" + document.getElementById('searchbox').value;
 });
 
+denver.addEventListener("click", function(event){
+  event.preventDefault();
+  window.location="indexpage2.html?city=denver";
+})
 
-allR.addEventListener("click", function(){
-  alert("goodbye")
-});
+chicago.addEventListener("click", function(event){
+  event.preventDefault();
+  window.location="indexpage2.html?city=chicago";
+})
+
+newyork.addEventListener("click", function(event){
+  event.preventDefault();
+  window.location="indexpage2.html?city=newyorkcity";
+})
+
+austin.addEventListener("click", function(event){
+  event.preventDefault();
+  window.location="indexpage2.html?city=austin";
+})
+
+losangeles.addEventListener("click", function(event){
+  event.preventDefault();
+  window.location="indexpage2.html?city=losangeles";
+})
+// show3.addEventListener("click", function(){
+//
+// });
+//
+//
+// allR.addEventListener("click", function(){
+//   alert("goodbye")
+// });
+
+
+// generate3.addEventListener("click", function(){
+//   alert("does this work")
+//
+// })
