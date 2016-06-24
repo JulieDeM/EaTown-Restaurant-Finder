@@ -103,7 +103,7 @@ button.addEventListener('click', function(){
         cuisines1.innerHTML = "Cuisine Types: " + places.restaurants[rest1].restaurant.cuisines;
         userRat1.innerHTML = "User Rating: " + places.restaurants[rest1].restaurant.user_rating.aggregate_rating;
         location1.innerHTML = "Address: " + places.restaurants[rest1].restaurant.location.address;
-        menu1.innerHTML = "View the Menu"
+        menu1.innerHTML = <a href="" "View the Menu" </a>
 
 
         //restaurant2
