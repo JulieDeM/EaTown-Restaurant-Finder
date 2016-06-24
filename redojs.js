@@ -1,5 +1,4 @@
 
-// console.log('hello');
 var data = null;
 var searchValue = document.getElementById('searchbox');
 var newP = document.createElement('p');

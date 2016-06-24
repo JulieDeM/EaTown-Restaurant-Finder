@@ -59,10 +59,10 @@ footer{
   align-items: center;
   justify-content: center;
 }
-#imgOne{
+/*#imgOne{
   background-image: url(food-pic1.jpg);
   height: 10%;
-}
+}*/
 #searchbox{
   background-color: #99ffeb;
   height:60px;

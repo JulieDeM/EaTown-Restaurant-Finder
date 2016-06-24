@@ -17,7 +17,9 @@ var userRTwo = document.createElement('p');
 var userRThree = document.createElement('p');
 var locationOne = document.createElement('p');
 var locationTwo = document.createElement('p');
-
+var imOne = document.getElementById('imag1');
+var imTwo = document.getElementById('imag2');
+var imThree = document.getElementById('imag3');
 var avgCost1 = document.getElementById('avgCost1');
 var avgCost2 = document.getElementById('avgCost2');
 var avgCost3 = document.getElementById('avgCost3');
@@ -37,7 +39,8 @@ var generate3 = document.getElementById('generate3');
 
 var imag1 = document.getElementById('imag1');
 var emptyArray = [];
-var picsAr = [];
+// var picsAr = [];
+var picsAr = ['appetizer.jpg', 'asian-food.jpg','asapragus.jpg', 'greek.jpg', 'hamburger.jpg', 'kimchi-fried-rice.jpg', 'pasta.jpg', 'pizza.jpg', 'potatoes.jpg', 'salad-dressing.jpg', 'salad.jpg', 'salmon.jpg', 'shish-kebab.jpg', 'shrimp.jpg'];
 var arr = [];
 var restaurantPostmanToken = "723ae512-1724-72a5-fa86-c0f546a67474"
 var cityPostmanToken = "0e497155-5063-2f93-05b6-f45c867ebb21"
@@ -104,12 +107,15 @@ button.addEventListener('click', function(){
         userRat3.innerHTML = "User Rating: " + places.restaurants[rest3].restaurant.user_rating.aggregate_rating;
 
 
-        var pic1 = Math.floor(Math.random(picsAr)*(picsAr.length));
-        var pic2 = Math.floor(Math.random(picsAr)*4);
-        var pic3 = Math.floor(Math.random(picsAr)*4);
+        var pic1 = Math.floor(Math.random()*14);
+        var pic2 = Math.floor(Math.random()*14);
+        var pic3 = Math.floor(Math.random()*14);
 
             //image randomizer
-        imag1.innerHTML += "<img src='./Images/" + pic2 + "'/>";
+        imag1.innerHTML = "<img src='./Images/" + picsAr[pic1] + "'/>";
+        imag2.innerHTML = "<img src='./Images/" + picsAr[pic2] + "'/>";
+        imag3.innerHTML = "<img src='./Images/" + picsAr[pic3] + "'/>";
+        picsAr.filter;
 
       })
       one.appendChild(newP);
@@ -128,10 +134,3 @@ button.addEventListener('click', function(){
   })
 
 });
-
-
-
-// generate3.addEventListener("click", function(){
-//   alert("hey")
-//
-// })
