@@ -1,4 +1,5 @@
 
+// console.log('hello');
 var data = null;
 var searchValue = document.getElementById('searchbox');
 var newP = document.createElement('p');
@@ -49,31 +50,46 @@ var losangeles = document.getElementById('five');
 show3.addEventListener("click",function(event){
   event.preventDefault();
   window.location="indexpage2.html?city=" + document.getElementById('searchbox').value;
+  var inO = window.location.search.indexOf("=");
+  var splO = window.location.search.splice(in0);
+  console.log(splO);
+
 });
 
 denver.addEventListener("click", function(event){
   event.preventDefault();
+  console.log("heyyyy");
   window.location="indexpage2.html?city=denver";
+  var inO = window.location.search.indexOf("=")
+
+
 })
 
 chicago.addEventListener("click", function(event){
   event.preventDefault();
   window.location="indexpage2.html?city=chicago";
+  var inO = window.location.search.indexOf("=")
 })
 
 newyork.addEventListener("click", function(event){
   event.preventDefault();
   window.location="indexpage2.html?city=newyorkcity";
+  var inO = window.location.search.indexOf("=")
+
 })
 
 austin.addEventListener("click", function(event){
   event.preventDefault();
   window.location="indexpage2.html?city=austin";
+  var inO = window.location.search.indexOf("=")
+
 })
 
 losangeles.addEventListener("click", function(event){
   event.preventDefault();
   window.location="indexpage2.html?city=losangeles";
+  var inO = window.location.search.indexOf("=")
+
 })
 // show3.addEventListener("click", function(){
 //

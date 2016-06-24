@@ -131,7 +131,7 @@ button.addEventListener('click', function(){
 
 
 
-generate3.addEventListener("click", function(){
-  alert("hey")
-
-})
+// generate3.addEventListener("click", function(){
+//   alert("hey")
+//
+// })
