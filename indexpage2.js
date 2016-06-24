@@ -32,10 +32,21 @@ var userRat3 = document.getElementById('userRat3');
 var location1 = document.getElementById('location1');
 var location2 = document.getElementById('location2');
 var generate3 = document.getElementById('generate3');
+var city = window.location.search.split('=')[1];
+var buttonRandomizerId = document.getElementById('buttonRandomizer');
+var searchboxSecondPage = document.getElementById('searchboxSecondPage');
 
 
+button.addEventListener("click", function(){
+  searchValue.value = city;
+  console.log("******CITY********");
+  console.log(city);
+  var text = searchValue.value;
+  console.log("******TEXT********");
+  console.log(text);
 
-
+})
+$button.trigger("click");
 
 var imag1 = document.getElementById('imag1');
 var emptyArray = [];
@@ -81,6 +92,10 @@ button.addEventListener('click', function(){
         console.log(rest2)
         var rest3 = Math.floor(Math.random(emptyArray)*20);
         console.log(rest3)
+
+        // if(rest1 === rest2 || rest1 === rest3 || rest3 === rest2){
+        //
+        // }
             //restaurant randomizer
             //restaurant1
         newP.innerHTML = places.restaurants[rest1].restaurant.name;
