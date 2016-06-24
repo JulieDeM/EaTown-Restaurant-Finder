@@ -45,6 +45,7 @@ var chicago = document.getElementById('two');
 var newyork = document.getElementById('three');
 var austin = document.getElementById('four');
 var losangeles = document.getElementById('five');
+// var count += (count+20);
 
 show3.addEventListener("click",function(event){
   event.preventDefault();
@@ -90,17 +91,17 @@ losangeles.addEventListener("click", function(event){
   var inO = window.location.search.indexOf("=")
 
 })
-// show3.addEventListener("click", function(){
-//
-// });
-//
-//
-// allR.addEventListener("click", function(){
-//   alert("goodbye")
-// });
+show3.addEventListener("click", function(){
+
+});
 
 
-// generate3.addEventListener("click", function(){
-//   alert("does this work")
-//
-// })
+allR.addEventListener("click", function(){
+  alert("goodbye")
+});
+
+
+generate3.addEventListener("click", function(){
+  alert("does this work")
+
+})

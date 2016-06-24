@@ -1,23 +1,37 @@
-var imag1 = document.getElementById('imag1');
-var emptyArray = [];
-var picsAr = [];
-var arr = [];
-var restaurantPostmanToken = "723ae512-1724-72a5-fa86-c0f546a67474"
-var cityPostmanToken = "0e497155-5063-2f93-05b6-f45c867ebb21"
-var queryObject = {
-  "async": true,
-  "crossDomain": true,
-  "method": "GET",
-  "headers": {
-    "user-key": "57a59ee455f594054dfce92d93f946a9",
-    "x-requested-with": "text/html",
-    "cache-control": "no-cache",
+$(document).ready(function() {
+
+  var city = window.location.search.split('=')[1];
+  var allRestaurantButton = document.getElementById('allRestaurantButton');
+  var searchboxAll = document.getElementById('searchboxAll');
+  var imag1 = document.getElementById('imag1');
+  var emptyArray = [];
+  var picsAr = [];
+  var arr = [];
+  // var count = 0;
+  // count+20;
+  //
+  //
+  //     var buttonCount = document.getElementById("countButton");
+      // var display = document.getElementById("displayCount");
+//   incrementCount() {
+//   count++;
+// }
+  var restaurantPostmanToken = "723ae512-1724-72a5-fa86-c0f546a67474"
+  var cityPostmanToken = "0e497155-5063-2f93-05b6-f45c867ebb21"
+  var queryObject = {
+    "async": true,
+    "crossDomain": true,
+    "method": "GET",
+    "headers": {
+      "user-key": "57a59ee455f594054dfce92d93f946a9",
+      "x-requested-with": "text/html",
+      "cache-control": "no-cache",
+    }
   }
-}
 
 
-button.addEventListener('click', function(){
-  var cityQueryUrl = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/locations?query=" + searchValue.value
+allRestaurantButton.addEventListener('click', function(){
+  var cityQueryUrl = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/locations?query=" + searchboxAll.value + "&start=" +
   cityQuery = queryObject;
   cityQuery.headers["postman-token"] = cityPostmanToken;
   cityQuery.url = cityQueryUrl;
@@ -66,13 +80,13 @@ button.addEventListener('click', function(){
         cuisines3.innerHTML = "Cuisine Types: " + places.restaurants[rest3].restaurant.cuisines;
         userRat3.innerHTML = "User Rating: " + places.restaurants[rest3].restaurant.user_rating.aggregate_rating;
 
-
-        var pic1 = Math.floor(Math.random(picsAr)*(picsAr.length));
-        var pic2 = Math.floor(Math.random(picsAr)*4);
-        var pic3 = Math.floor(Math.random(picsAr)*4);
-
-            //image randomizer
-        imag1.innerHTML += "<img src='./Images/" + pic2 + "'/>";
+        //
+        // var pic1 = Math.floor(Math.random(picsAr)*(picsAr.length));
+        // var pic2 = Math.floor(Math.random(picsAr)*4);
+        // var pic3 = Math.floor(Math.random(picsAr)*4);
+        //
+        //     //image randomizer
+        // imag1.innerHTML += "<img src='./Images/" + pic2 + "'/>";
 
       })
       one.appendChild(newP);
@@ -91,3 +105,6 @@ button.addEventListener('click', function(){
   })
 
 });
+$(allRestaurantButton).trigger("click");
+
+})
