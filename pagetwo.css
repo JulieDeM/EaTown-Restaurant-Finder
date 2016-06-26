@@ -24,8 +24,8 @@ img{
 }
 .restContainer{
   position: relative;
-  width: 300px;
-
+  width: 100%;
+/*margin-left: 2vw;*/
 }
 .restaurant{
   margin-left: 25px;
@@ -117,12 +117,41 @@ newP{
   color: #E719FF;
   font-family: sans-serif;
   text-align: center;
-  margin-right: 5vw;
-
+  margin: 5px 3vw auto 3vw;
+  border: 2px green solid;
 }
 #userRat1, #userRat2, #userRat3{
   margin-top: 7vh;
   text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  border: 2px yellow solid;
+}
+#avgCost1, #avgCost2, #avgCost3{
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  border: 2px blue solid;
+}
+#cuisines1, #cuisines2, #cuisines3{
+  text-align: center;
+  font-weight: bold;
+  margin-top: inherit;
+  font-family: sans-serif;
+  border: 2px red solid;
+}
+#location1, #location2, #location3{
+  text-align: center;
+  font-weight:bold;
+  margin-top: 2vh;
+  font-family: sans-serif;
+  border: 2px purple solid;
+}
+#menu1, #menu2, #menu3{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2vh;
+  font-family: sans-serif;
 }
 p{
   font-weight: bold;

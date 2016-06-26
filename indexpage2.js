@@ -2,9 +2,9 @@
 
 
   var searchValue = document.getElementById('searchbox');
-  var one = document.getElementById('one');
-  var two = document.getElementById('two');
-  var three = document.getElementById('three');
+  var one = document.getElementById('name1');
+  var two = document.getElementById('name2');
+  var three = document.getElementById('name3');
   var button = document.getElementById('button');
   var newP = document.createElement('h2');
   var newJ = document.createElement('h2');
@@ -133,7 +133,7 @@
           cuisines1.innerHTML = "Cuisine Types: " + places.restaurants[rest1].restaurant.cuisines;
           userRat1.innerHTML = "User Rating: " + places.restaurants[rest1].restaurant.user_rating.aggregate_rating;
           location1.innerHTML = "Address: " + places.restaurants[rest1].restaurant.location.address;
-          menu1.innerHTML = "<a href=" + places.restaurants[rest1].restaurant.menu_url + ">" + "View the Menu" + "</a>"
+          menu1.innerHTML = '<input type="button"' +"<a href=" + places.restaurants[rest1].restaurant.menu_url +  "</a>/>"
 
 
           //restaurant2
