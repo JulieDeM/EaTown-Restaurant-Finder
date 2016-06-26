@@ -45,14 +45,24 @@ var chicago = document.getElementById('two');
 var newyork = document.getElementById('three');
 var austin = document.getElementById('four');
 var losangeles = document.getElementById('five');
-// var count += (count+20);
+var count = (count+20);
 
-show3.addEventListener("click",function(event){
-  event.preventDefault();
+show3.addEventListener("click",function(Sear){
+  Sear.preventDefault();
   window.location="indexpage2.html?city=" + document.getElementById('searchbox').value;
   var inO = window.location.search.indexOf("=");
   var splO = window.location.search.splice(in0);
   console.log(splO);
+
+});
+
+allR.addEventListener("click",function(event){
+  event.preventDefault();
+  window.location="pagethree.html?city=" + document.getElementById('searchbox').value;
+  var iOf = window.location.search.indexOf("=");
+  console.log(iOf);
+    var sO = window.location.search.splice(in0);
+  console.log(sO);
 
 });
 

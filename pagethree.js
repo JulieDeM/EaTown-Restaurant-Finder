@@ -1,14 +1,15 @@
 $(document).ready(function() {
 
-  var city = window.location.search.split('=')[1];
-  var allRestaurantButton = document.getElementById('allRestaurantButton');
-  var searchboxAll = document.getElementById('searchboxAll');
-  var imag1 = document.getElementById('imag1');
-  var emptyArray = [];
-  var picsAr = [];
+  // var city = window.location.search.split('=')[1];
+  // var allRestaurantButton = document.getElementById('allRestaurantButton');
+  // var searchboxAll = document.getElementById('searchboxAll');
+  // var imag1 = document.getElementById('imag1');
+  // var emptyArray = [];
+  // var picsAr = [];
   var arr = [];
-  // var count = 0;
-  // count+20;
+  var allRestButton = document.getElementById('twentyMore');
+  var count = count+20;
+  console.log(count);
   //
   //
   //     var buttonCount = document.getElementById("countButton");
@@ -30,8 +31,8 @@ $(document).ready(function() {
   }
 
 
-allRestaurantButton.addEventListener('click', function(){
-  var cityQueryUrl = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/locations?query=" + searchboxAll.value + "&start=" +
+allRestButton.addEventListener('click', function(){
+  var cityQueryUrlAndCount = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/locations?query=" + searchboxAll.value + "&start=" + count;
   cityQuery = queryObject;
   cityQuery.headers["postman-token"] = cityPostmanToken;
   cityQuery.url = cityQueryUrl;
@@ -105,6 +106,6 @@ allRestaurantButton.addEventListener('click', function(){
   })
 
 });
-$(allRestaurantButton).trigger("click");
+$(allRestButton).trigger("click");
 
 })

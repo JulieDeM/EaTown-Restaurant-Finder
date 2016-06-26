@@ -6,9 +6,9 @@
   var two = document.getElementById('two');
   var three = document.getElementById('three');
   var button = document.getElementById('button');
-  var newP = document.createElement('p');
-  var newJ = document.createElement('p');
-  var newK = document.createElement('p');
+  var newP = document.createElement('h2');
+  var newJ = document.createElement('h2');
+  var newK = document.createElement('h2');
   var cost1 = document.createElement('p');
   var cost2 = document.createElement('p');
   var cost3 = document.createElement('p');
@@ -20,6 +20,7 @@
   var userRThree = document.createElement('p');
   var locationOne = document.createElement('p');
   var locationTwo = document.createElement('p');
+  var locationThree = document.createElement('p');
   var imOne = document.getElementById('imag1');
   var imTwo = document.getElementById('imag2');
   var imThree = document.getElementById('imag3');
@@ -34,13 +35,14 @@
   var userRat3 = document.getElementById('userRat3');
   var location1 = document.getElementById('location1');
   var location2 = document.getElementById('location2');
+  var location3 = document.getElementById('location3');
   var generate3 = document.getElementById('generate3');
   var city = window.location.search.split('=')[1];
   var buttonRandomizerId = document.getElementById('buttonRandomizer');
   var searchboxSecondPage = document.getElementById('searchboxSecondPage');
   // var rest1 = Math.floor(Math.random(startArray)*);
-  var count = 0;
-  var buttonCount = document.getElementById("countButton");
+  // var count = 0;
+  // var buttonCount = document.getElementById("countButton");
 
   //
 
@@ -68,7 +70,7 @@
   var imag1 = document.getElementById('imag1');
   var emptyArray = [];
   // var picsAr = [];
-  var picsAr = ['appetizer.jpg', 'asian-food.jpg','asapragus.jpg', 'greek.jpg', 'hamburger.jpg', 'kimchi-fried-rice.jpg', 'pasta.jpg', 'pizza.jpg', 'potatoes.jpg', 'salad-dressing.jpg', 'salad.jpg', 'salmon.jpg', 'shish-kebab.jpg', 'shrimp.jpg'];
+  var picsAr = ['appetizer.jpg', 'asian-food.jpg', 'greek.jpg', 'hamburger.jpg', 'kimchi-fried-rice.jpg', 'pasta.jpg', 'pizza.jpg', 'potatoes.jpg', 'salad-dressing.jpg', 'salad.jpg', 'salmon.jpg', 'shish-kebab.jpg', 'shrimp.jpg'];
   var arr = [];
   var restaurantPostmanToken = "723ae512-1724-72a5-fa86-c0f546a67474"
   var cityPostmanToken = "0e497155-5063-2f93-05b6-f45c867ebb21"
@@ -120,7 +122,7 @@
           cuisines1.innerHTML = "Cuisine Types: " + places.restaurants[rest1].restaurant.cuisines;
           userRat1.innerHTML = "User Rating: " + places.restaurants[rest1].restaurant.user_rating.aggregate_rating;
           location1.innerHTML = "Address: " + places.restaurants[rest1].restaurant.location.address;
-          menu1.innerHTML = "View the Menu"
+          menu1.innerHTML = "<a href=" + places.restaurants[rest1].restaurant.menu_url + ">" + "View the Menu" + "</a>"
 
 
           //restaurant2
@@ -130,6 +132,7 @@
           cuisines2.innerHTML = "Cuisine Types: " + places.restaurants[rest2].restaurant.cuisines;
           userRat2.innerHTML = "User Rating: " + places.restaurants[rest2].restaurant.user_rating.aggregate_rating;
           location2.innerHTML = "Address: " + places.restaurants[rest2].restaurant.location.address;
+          menu2.innerHTML = "<a href=" + places.restaurants[rest2].restaurant.menu_url + ">" + "View the Menu" + "</a>"
 
 
           //restaurant3
@@ -137,11 +140,13 @@
           cost3.innerHTML = "Average Cost for Two People:  " + places.restaurants[rest3].restaurant.currency + places.restaurants[rest3].restaurant.average_cost_for_two;
           cuisines3.innerHTML = "Cuisine Types: " + places.restaurants[rest3].restaurant.cuisines;
           userRat3.innerHTML = "User Rating: " + places.restaurants[rest3].restaurant.user_rating.aggregate_rating;
+          location3.innerHTML = "Address: " + places.restaurants[rest3].restaurant.location.address;
+          menu3.href =  places.restaurants[rest3].restaurant.menu_url
 
 
-          var pic1 = Math.floor(Math.random()*14);
-          var pic2 = Math.floor(Math.random()*14);
-          var pic3 = Math.floor(Math.random()*14);
+          var pic1 = Math.floor(Math.random()*13);
+          var pic2 = Math.floor(Math.random()*13);
+          var pic3 = Math.floor(Math.random()*13);
 
               //image randomizer
           imag1.innerHTML = "<img src='./Images/" + picsAr[pic1] + "'/>";
@@ -163,11 +168,11 @@
         userRat2.appendChild(userRTwo);
         userRat3.appendChild(userRThree);
         location2.appendChild(locationTwo);
+        location3.appendChild(locationThree);
     })
 
   });
 
   $(button).trigger("click");
-
 
 })

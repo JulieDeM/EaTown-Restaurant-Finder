@@ -11,10 +11,13 @@
       <header>
         <a href="index.html"><img src="restaurant_logo2.jpg"/></a>
       </header>
+      <section id="quote">
+        <h1>Great Restaurant Recommondations For Your City</h1>
+      </section>
       <section id="results">
         <div id="restName">
           <article id="one" class="restaurant">
-            <div id="firstR">
+            <div id="restContainer">
               <div class="rest1" id="imag1"></div>
               <div id="name1" class="rest1"></div>
               <div id="userRat1" class="rest1"></div>
@@ -22,32 +25,29 @@
               <div id="cuisines1" class="rest1"></div>
               <div id="location1" class="rest1"></div>
               <div id="menu1" class="rest1"></div>
-
-              <!-- <div id="picture">
-                <article id="picture1"></article>
-                <article id="picture2"></article>
-                <article id="picture3"></article>
-              </div> -->
           </div>
           </article>
           <article id="two" class="restaurant">
-            <div id="imag2"></div>
+            <div id="restContainer">
+            <div id="imag2" class="rest2"></div>
             <div id="name2" class="rest2"></div>
             <div id="userRat2" class="rest2"></div>
             <div id="avgCost2" class="rest2"></div>
             <div id="cuisines2" class="rest2"></div>
             <div id="location2" class="rest2"></div>
             <div id="menu2" class="rest2"></div>
-
+          </div>
           </article>
           <article id="three" class="restaurant">
-            <div id="imag3"></div>
+            <div id="restContainer">
+            <div id="imag3" class="rest3"></div>
             <div id="name3" class="rest3"></div>
             <div id="userRat3" class="rest3"></div>
             <div id="avgCost3" class="rest3"></div>
             <div id="cuisines3" class="rest3"></div>
             <div id="location3" class="rest3"></div>
-            <div id="menu3" class="rest3"></div>
+            <input type="button" id="menu3" class="rest3" value="View Menu">
+          </div>
           </article>
         </div>
       </section>
@@ -62,9 +62,8 @@
       </section>
     </div>
     <footer><p id="foot">Make choices easier</p></footer>
+    <!-- NEED TO UNCOMMENT BELOW, COMMENTED OUT TO TEST LAYOUT -->
     <script type="text/javascript" src="test.js"></script>
     <script src="indexpage2.js"></script>
-    <!-- <script src="redojs.js"></script> -->
-
   </body>
 </html>
