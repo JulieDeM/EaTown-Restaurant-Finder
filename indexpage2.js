@@ -52,7 +52,11 @@
     var text = searchValue.value;
     console.log("******TEXT********");
     console.log(text);
-    text.innerHTML = city;
+    if(city=="undefined" || city == ""){
+      text.innerHTML= "";
+    } else {
+      text.innerHTML = city;
+    };
 
   // } document.write(delineate(text)));
 
@@ -92,9 +96,16 @@
     cityQuery.headers["postman-token"] = cityPostmanToken;
     cityQuery.url = cityQueryUrl;
 
-    $.ajax(cityQuery).done(function(response) {
-        var entity_id= response.location_suggestions[arr.length].entity_id
-        var restaurantsUrl = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id=" + entity_id + "&entity_type=city";
+    $.ajax(cityQuery).done(function(response){
+        var entity_id= response.location_suggestions[arr.length].entity_id;
+        // entity_id = if (entity_id === ""|| entity_id === ""){
+        //   return "";
+        // } else{
+        //   entity_id;
+        // }
+        var count = (Math.floor(Math.random()*99));
+        console.log(count);
+        var restaurantsUrl = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id=" + entity_id + "&entity_type=city" + "&start=" + count;
         var restaurantsQuery = queryObject;
         restaurantsQuery.headers["postman-token"] = restaurantPostmanToken;
         restaurantsQuery.url = restaurantsUrl;
@@ -141,7 +152,7 @@
           cuisines3.innerHTML = "Cuisine Types: " + places.restaurants[rest3].restaurant.cuisines;
           userRat3.innerHTML = "User Rating: " + places.restaurants[rest3].restaurant.user_rating.aggregate_rating;
           location3.innerHTML = "Address: " + places.restaurants[rest3].restaurant.location.address;
-          menu3.href =  places.restaurants[rest3].restaurant.menu_url
+          menu3.innerHTML =  "<a href=" + places.restaurants[rest3].restaurant.menu_url+ ">" + "View the Menu" + "</a>"
 
 
           var pic1 = Math.floor(Math.random()*13);

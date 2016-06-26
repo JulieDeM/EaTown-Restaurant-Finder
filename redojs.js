@@ -36,7 +36,7 @@ xhr.send(data);
 //******************************************don't delete the below
 // here are the 3 buttons
 var show3 = document.getElementById('generate3');//generates 3 by clicking button
-var allR = document.getElementById('showall'); //generates all restaurants by button
+// var allR = document.getElementById('showall'); //generates all restaurants by button
 var newR = document.createElement('p'); //creates a new p for 3 random restaurants
 
 //images of cities
@@ -56,15 +56,15 @@ show3.addEventListener("click",function(Sear){
 
 });
 
-allR.addEventListener("click",function(event){
-  event.preventDefault();
-  window.location="pagethree.html?city=" + document.getElementById('searchbox').value;
-  var iOf = window.location.search.indexOf("=");
-  console.log(iOf);
-    var sO = window.location.search.splice(in0);
-  console.log(sO);
-
-});
+// allR.addEventListener("click",function(event){
+//   event.preventDefault();
+//   window.location="pagethree.html?city=" + document.getElementById('searchbox').value;
+//   var iOf = window.location.search.indexOf("=");
+//   console.log(iOf);
+//     var sO = window.location.search.splice(in0);
+//   console.log(sO);
+//
+// });
 
 denver.addEventListener("click", function(event){
   event.preventDefault();
