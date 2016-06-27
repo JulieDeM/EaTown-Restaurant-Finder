@@ -12,12 +12,6 @@ var xhr = new XMLHttpRequest();
 xhr.addEventListener("readystatechange", function () {
   if (this.readyState === 4 && xhr.status < 400) {
     var places = JSON.parse(xhr.responseText);
-      if(searchValue === places.restaurants[0].restaurant.location.city){
-        newP.innerHTML = "hello";
-        one.appendChild(newP);
-      }
-        else{
-        }
   }
 });
 

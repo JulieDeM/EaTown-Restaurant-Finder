@@ -49,6 +49,11 @@ footer{
   margin-top: 24vh;
   padding: 0;
 }
+#foot{
+  margin: 0;
+  padding-top: 3vh;
+  text-decoration: none;
+}
 #icon{
   display: inline-flex;
   flex-direction: row;
@@ -63,7 +68,7 @@ footer{
   padding: 15px 20px 15px 20px;
   font-size: 20px;
   margin: 60px 10px 10px 10px;
-  border-radius: 20%;
+  border-radius: 12%;
   align-items: center;
   justify-content: center;
 }
@@ -79,21 +84,19 @@ newP{
   color: #E719FF;
 }
 #imag1, #imag2, #imag3{
-  max-width: 10vw;
+  max-width: 9vw;
   max-height: 6vh;
   border-radius: 10%;
   justify-content: center;
   margin-left: 1vw;
-  margin-top: 2vh;
+  margin-top: 3vh;
   object-fit: cover;
-  border: 2px green solid;
 }
 #name1, #name2, #name3{
   color: #E719FF;
   font-family: sans-serif;
   text-align: center;
-  margin: 0 1vw auto 12vw;
-  border: 2px red solid;
+  margin: 0 1vw auto 9vw;
   max-width: 15vw;
 }
 #userRat1, #userRat2, #userRat3{
