@@ -25,7 +25,7 @@ img{
 .restContainer{
   position: relative;
   width: 100%;
-/*margin-left: 2vw;*/
+  margin-top: 0;
 }
 .restaurant{
   margin-left: 25px;
@@ -40,31 +40,6 @@ img{
   width: 29%;
   position: relative;
 }
-/*.rest1{
-  display: inline-flex;
-  max-width: 12vw;
-  flex-direction: column;
-  margin-left: 2vw;
-  margin-top: 1.5vh;
-  column-width: 500px;
-}
-.rest2{
-  display: inline-flex;
-  max-width: 12vw;
-  flex-direction: column wrap;
-  margin-left: 2vw;
-  margin-top: 1.5vh;
-  column-width: 500px;
-
-}
-.rest3{
-  display: flex;
-  flex-direction: column;
-  max-width: 12vw;
-  margin-left: 2vw;
-  margin-top: 1.5vh;
-  column-width: 350px;
-}*/
 footer{
   background-color: #C4C1E8;
   height: 10vh;
@@ -88,7 +63,7 @@ footer{
   padding: 15px 20px 15px 20px;
   font-size: 20px;
   margin: 60px 10px 10px 10px;
-  border-radius: 5%;
+  border-radius: 20%;
   align-items: center;
   justify-content: center;
 }
@@ -104,48 +79,51 @@ newP{
   color: #E719FF;
 }
 #imag1, #imag2, #imag3{
-  max-width: 13vw;
+  max-width: 10vw;
   max-height: 6vh;
   border-radius: 10%;
   justify-content: center;
   margin-left: 1vw;
   margin-top: 2vh;
   object-fit: cover;
-
+  border: 2px green solid;
 }
 #name1, #name2, #name3{
   color: #E719FF;
   font-family: sans-serif;
   text-align: center;
-  margin: 5px 3vw auto 3vw;
-  border: 2px green solid;
+  margin: 0 1vw auto 12vw;
+  border: 2px red solid;
+  max-width: 15vw;
 }
 #userRat1, #userRat2, #userRat3{
-  margin-top: 7vh;
+  margin-top: 4vh;
   text-align: center;
   font-weight: bold;
   font-family: sans-serif;
-  border: 2px yellow solid;
 }
 #avgCost1, #avgCost2, #avgCost3{
   text-align: center;
   font-weight: bold;
   font-family: sans-serif;
-  border: 2px blue solid;
 }
 #cuisines1, #cuisines2, #cuisines3{
   text-align: center;
   font-weight: bold;
   margin-top: inherit;
   font-family: sans-serif;
-  border: 2px red solid;
+}
+#locality1, #locality2, #locality3{
+  text-align: center;
+  font-weight:bold;
+  margin-top: 2vh;
+  font-family: sans-serif;
 }
 #location1, #location2, #location3{
   text-align: center;
   font-weight:bold;
   margin-top: 2vh;
   font-family: sans-serif;
-  border: 2px purple solid;
 }
 #menu1, #menu2, #menu3{
   text-align: center;
@@ -166,5 +144,5 @@ h1{
 h2{
   text-align: center;
   color: #E719FF;
-  /*margin-left: 1vw;*/
+  margin-top: 0;
 }

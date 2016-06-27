@@ -46,6 +46,7 @@ header{
   color: #0DFFCF;
   line-height:500px;
   text-align:center;
+  margin-left: 3px;
 }
 #four{
   border: 5px #E719FF solid;
@@ -56,6 +57,7 @@ header{
   color: #0DFFCF;
   line-height:500px;
   text-align:center;
+  margin-left: 3px;
 }
 #five{
   border: 5px #E719FF solid;
@@ -66,6 +68,7 @@ header{
   color: #0DFFCF;
   line-height:500px;
   text-align:center;
+  margin-left: 3px;
 }
 #six{
   border: 5px #E719FF solid;
@@ -76,6 +79,7 @@ header{
   color: #0DFFCF;
   line-height:500px;
   text-align:center;
+  margin-left: 3px;
 }
 .circle{
   columns: 3;
@@ -94,7 +98,7 @@ footer{
   text-align: center;
 }
 foot{
-  margin: 42%;
+  margin: 10%;
   padding-top: 40px;
 }
 #searchbox{
@@ -120,10 +124,10 @@ foot{
 }
 .icons{
   display: inline-flex;
-  border: 3px solid red;
   flex-direction: column;
   justify-content: center;
   margin-left: 12px;
+  margin-top: 10px;
 }
 .circL{
   width:200px;

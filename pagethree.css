@@ -9,29 +9,6 @@ header{
   opacity: .6;
   top:0;
 }
-#icon{
-  height: 30vh;
-  width: 100%;
-}
-#results{
-  height: 56vh;
-  width: 100%;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
-.restaurant{
-  margin-left: 20px;
-  margin-top: 20px;
-  background-color: white;
-  padding: 0;
-  display: inline-flex;
-  flex-direction: row;
-  box-shadow: 5px 5px 0px #999;
-  border-radius: 10% 10% 10% 10%;
-  height: 50vh;
-  width: 30%;
-}
 footer{
   background-color: #C4C1E8;
   height: 10vh;
@@ -41,85 +18,15 @@ footer{
   margin-top: 24vh;
   padding: 0;
 }
-#icon{
-  display: inline-flex;
-  flex-direction: row;
-  height: 200px;
-  width: 100%;
-  justify-content: center;
-  position: absolute;
-}
-.button{
-  background-color: #E719FF;
-  color: #ffffff;
-  padding: 15px 20px 15px 20px;
-  font-size: 20px;
-  margin: 100px 10px 10px 10px;
-  border-radius: 5%;
-  align-items: center;
-  justify-content: center;
-}
-#imgOne{
-  background-image: url(food-pic1.jpg);
-  height: 10%;
-}
-#searchbox{
-  background-color: #99ffeb;
-  height:60px;
-  width: 350px;
-  font-size: 25px;
-  /*justify-content: center;*/
-  /*align-items: center;*/
-  margin-top: 27%;
-  margin-right: 55%;
-}
-newP{
+h1{
+  text-align: center;
   color: #E719FF;
+  font-size: 40px;
 }
-.rest1{
-  display: inline-flex;
-  height:6vh;
-  width: 25vw;
-  border: 3px red solid;
-  flex-direction: column;
-  max-height: 6vh;
-  margin-left: 2vw;
-  margin-top: .5vh;
+#aboutSection{
+  margin-left: 10vh;
+  margin-right: 10vh;
 }
-.rest2{
-  display: inline-flex;
-  height:6vh;
-  width: 25vw;
-  border: 3px red solid;
-  flex-direction: column;
-  max-height: 6vh;
-  margin-left: 2vw;
-  margin-top: .5vh;
-}
-.rest3{
-  display: inline-flex;
-  height:6vh;
-  width: 25vw;
-  border: 3px red solid;
-  flex-direction: column;
-  max-height: 6vh;
-  margin-left: 2vw;
-  margin-top: .5vh;
-}
-#imag1{
-  width: 13vw;
-  height: 13vh;
-  border-radius: 10%;
-  justify-content: center;
-  margin-left: 1vw;
-  margin-top: 2vh;
-
-}
-#imag2, #imag3{
-  width: 13vw;
-  height: 13vh;
-  border-radius: 10%;
-  justify-content: center;
-  margin-left: 1vw;
-  margin-top: 2vh;
+p{
+  font-size: 20px;
 }
